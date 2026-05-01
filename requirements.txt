@@ -1,0 +1,34 @@
+# The Intelligent Network Engineer — All Dependencies
+# pip install -r requirements.txt
+
+# ── Section 2: Network Automation ─────────────────────────────
+netmiko>=4.3.0
+paramiko>=3.0.0
+nornir>=3.4.0
+nornir-netmiko>=1.0.0
+nornir-utils>=0.2.0
+genie>=23.0
+pyats>=23.0
+tabulate>=0.9.0
+
+# ── Section 3: AI Integration ──────────────────────────────────
+anthropic>=0.20.0       # Chapters 12–15 (raw API)
+openai>=1.30.0          # Chapter 16 (LangChain + GPT-4o)
+
+# LangChain framework (Chapter 16)
+langchain>=0.2.0
+langchain-openai>=0.1.0
+langchain-anthropic>=0.1.0
+langchain-community>=0.2.0  # Includes ChatOllama
+langgraph>=0.1.0
+
+# Local models (Chapter 16 — Ollama)
+ollama>=0.2.0           # Python client for local Ollama server
+
+# Web UI
+streamlit>=1.30.0
+
+# ── Utilities ─────────────────────────────────────────────────
+python-dotenv>=1.0.0    # .env file support
+pytest>=7.0.0           # Chapter 11 CI/CD testing
+requests>=2.31.0        # Weather agent HTTP calls
